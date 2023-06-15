@@ -1,38 +1,20 @@
 .App {
+  margin: 0;
+  /* box sizing added by wds for navbar */
+  /* The box-sizing property allows us to include the padding and border in an element's total width and height */
+  /* by default when we are setting sizes, we are setting the size of the content box  */
+  /* anything added to a content box will expand its size (ie, a border would expand its size) */
+  /* with border-box, the border or padding would be added within the specified limits and the item would not expand  */
+  box-sizing: border-box;
+}
+
+.app-outer { 
+    /*  these 3 needed for proper header-body-footer styling:  */
+  display: flex; 
+  flex-direction: column; 
+  min-height: 100vh; 
+}
+
+.app-main {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

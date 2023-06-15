@@ -1,0 +1,25 @@
+.footer-outer {
+  background-color: #232f3e; 
+  color: white;
+  minHeight: 45px;
+  height: 45px;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  bottom: 0px;
+  width: 100vw; 
+  display: flex; 
+  justify-content: center; 
+  /* margin-top auto is needed for proper header-body-footer styling:  */
+  /* margin-top auto >> This property is used when margin-top is determined by the browser.    */
+  margin-top: auto; 
+}
+
+.footer-link {
+  margin-right: 3vw;
+  text-decoration: none;
+  color: white;
+  /* center vertically */
+  display: flex; 
+  align-items: center; 
+}
+
