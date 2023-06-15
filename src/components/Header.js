@@ -12,6 +12,7 @@ function Header({ user, setUser }) {
   let handleLogout = () => {
     console.log("handleLogout called"); 
     setUser(null); 
+    localStorage.removeItem("css-practice-user"); 
     navigate("/");
   }
 
@@ -21,11 +22,10 @@ function Header({ user, setUser }) {
         <a href="/" className="site-title">Home</a>
       </div>
       <ul>
-        <li><a href="#">Quotes</a></li>
-        <li><a href="#">Register</a></li>
-        <li><a href="#">Login</a></li>
-        <li><a href="#">User: Batman55</a></li>
-        <li><button className="logout-button">Logout</button></li>
+        { !user && <li><a href="/login">Login</a></li> }
+        { user && <li><a href="/quotes">Quotes</a></li> } 
+        { user && <li><a href="#">User: {user}</a></li> } 
+        { user && <li><button onClick={handleLogout} className="logout-button">Logout</button></li> }
       </ul>
     </nav>
   )

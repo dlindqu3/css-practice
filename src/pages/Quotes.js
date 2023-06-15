@@ -1,6 +1,7 @@
-import React from 'react'
+import React from 'react';
 
 function Quotes() {
+
   return (
     <div>Quotes page here</div>
   )

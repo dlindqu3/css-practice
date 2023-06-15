@@ -1,6 +1,7 @@
 .nav {
   background-color: #232f3e; 
   min-height: 45px; 
+  /* min-width: 100%;  */
   color: white;
   display: flex; 
   justify-content: space-between;
